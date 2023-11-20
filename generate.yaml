@@ -1,11 +1,10 @@
 ---
-name: eespa
-description: 'Perform Employee Related '
-basePath: /ea
-openApiSpec: eespa.yaml
 environmentSpec: QA
-type: API
+type: Product
 authMethod: none
+product:
+  productName: TektonKT
+  apiList: asset-management
 corelation:
   correlationId: "true"
   trace: "true"
