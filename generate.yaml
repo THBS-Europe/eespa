@@ -1,13 +1,9 @@
 ---
-name: eespa
-description: 'Perform Employee Related '
-basePath: /ea
-openApiSpec: eespa.yaml
 environmentSpec: QA
-type: API
+type: Product
 authMethod: none
 filterIp:
-  allowip: 10.20.30.40
+  allowip: 203.192.253.87
   filterpolicy: api
 azureRateLimit:
   noOfCalls: 2
@@ -19,6 +15,7 @@ responseCache:
   cachepolicy: api
 product:
   productName: TektonKT
+  apiList: EmployeeApplication
 validateJWT:
   headerName: Authorization
   failedStatusCode: 401
@@ -30,6 +27,7 @@ validateJWT:
   jwtpolicy: api
 corelation:
   correlationId: "true"
-  correlationpolicy: api
+  trace: "true"
+  correlationpolicy: product
 schemes: []
 routes: []
