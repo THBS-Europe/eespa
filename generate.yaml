@@ -4,7 +4,7 @@ type: Product
 authMethod: none
 product:
   productName: TektonKT
-  apiList: "eespa,eesspa"
+  apiList: data-api-s
 corelation:
   correlationId: "true"
   trace: "true"
