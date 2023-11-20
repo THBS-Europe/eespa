@@ -26,7 +26,6 @@ validateJWT:
     match: ""
   jwtpolicy: product
 corelation:
-  correlationId: "true"
   correlationpolicy: product
 schemes: []
 routes: []
