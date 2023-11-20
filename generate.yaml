@@ -7,6 +7,7 @@ product:
   apiList: asset-management
 corelation:
   correlationId: "true"
+  trace: "true"
   correlationpolicy: product
 schemes: []
 routes: []
