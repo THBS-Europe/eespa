@@ -1,21 +1,24 @@
 ---
-environmentSpec: Dev
-type: Product
+name: eespa
+description: 'Perform Employee Related '
+basePath: /ea
+openApiSpec: eespa.yaml
+environmentSpec: QA
+type: API
 authMethod: none
 filterIp:
-  allowip: 203.192.253.87
-  filterpolicy: product
+  allowip: 10.20.30.40
+  filterpolicy: api
 azureRateLimit:
   noOfCalls: 2
   renewalPeriod: 60
-  ratepolicy: product
+  ratepolicy: api
   counter: ip-address
 responseCache:
   timeDuration: 30
-  cachepolicy: product
+  cachepolicy: api
 product:
   productName: TektonKT
-  apiList: clouddictionariesapi
 validateJWT:
   headerName: Authorization
   failedStatusCode: 401
@@ -24,8 +27,9 @@ validateJWT:
   requiredClaims:
     name: ""
     match: ""
-  jwtpolicy: product
+  jwtpolicy: api
 corelation:
-  correlationpolicy: product
+  correlationId: "true"
+  correlationpolicy: api
 schemes: []
 routes: []
