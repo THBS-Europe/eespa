@@ -7,6 +7,7 @@ product:
   apiList: eespa
 corelation:
   correlationId: "true"
-  correlationpolicy: api
+  trace: "true"
+  correlationpolicy: product
 schemes: []
 routes: []
