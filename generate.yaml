@@ -2,32 +2,11 @@
 environmentSpec: QA
 type: Product
 authMethod: none
-filterIp:
-  allowip: 203.192.253.87
-  filterpolicy: api
-azureRateLimit:
-  noOfCalls: 2
-  renewalPeriod: 60
-  ratepolicy: api
-  counter: ip-address
-responseCache:
-  timeDuration: 30
-  cachepolicy: api
 product:
   productName: TektonKT
-  apiList: "eespa,eesspa"
-validateJWT:
-  headerName: Authorization
-  failedStatusCode: 401
-  failedStatusMessage: Authorization failure
-  openIdURL: https://sit.identity.idmodule.eu/.well-known/openid-configuration
-  requiredClaims:
-    name: ""
-    match: ""
-  jwtpolicy: api
+  apiList: eespa
 corelation:
   correlationId: "true"
-  trace: "true"
-  correlationpolicy: product
+  correlationpolicy: api
 schemes: []
 routes: []
