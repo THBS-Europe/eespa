@@ -11,6 +11,6 @@ product:
 corelation:
   correlationId: "true"
   trace: "true"
-  correlationpolicy: product
+  correlationpolicy: api
 schemes: []
 routes: []
