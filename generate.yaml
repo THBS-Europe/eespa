@@ -15,7 +15,7 @@ responseCache:
   cachepolicy: api
 product:
   productName: TektonKT
-  apiList: EmployeeApplication
+  apiList: "eespa,eesspa"
 validateJWT:
   headerName: Authorization
   failedStatusCode: 401
