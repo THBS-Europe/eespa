@@ -4,10 +4,10 @@ type: Product
 authMethod: none
 product:
   productName: TektonKT
-  apiList: asset-management
+  apiList: eespa
 corelation:
   correlationId: "true"
   trace: "true"
-  correlationpolicy: product
+  correlationpolicy: api
 schemes: []
 routes: []
