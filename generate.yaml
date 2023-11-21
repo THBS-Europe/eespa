@@ -22,7 +22,7 @@ validateJWT:
   failedStatusMessage: Authorization failure
   openIdURL: https://sit.identity.idmodule.eu/.well-known/openid-configuration
   requiredClaims:
-    name: usr
+    name: usr1
     match: all
   jwtpolicy: product
 corelation:
