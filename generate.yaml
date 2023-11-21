@@ -4,7 +4,7 @@ type: Product
 authMethod: none
 product:
   productName: TektonKT
-  apiList: "cc-transformer-api,asset-management"
+  apiList: cc-transformer-api
 corelation:
   correlationId: "true"
   trace: "true"
