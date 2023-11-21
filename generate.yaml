@@ -1,10 +1,6 @@
 ---
-name: eespa
-description: 'Perform Employee Related '
-basePath: /ea
-openApiSpec: eespa.yaml
 environmentSpec: QA
-type: API
+type: Product
 authMethod: none
 filterIp:
   allowip: 10.20.30.40
@@ -12,25 +8,13 @@ filterIp:
 azureRateLimit:
   noOfCalls: 2
   renewalPeriod: 60
-  ratepolicy: api
+  ratepolicy: product
   counter: ip-address
 responseCache:
   timeDuration: 30
   cachepolicy: api
 product:
   productName: NewTestProduct
-validateJWT:
-  headerName: Authorization
-  failedStatusCode: 401
-  failedStatusMessage: Authorization failure
-  openIdURL: https://sit.identity.idmodule.eu/.well-known/openid-configuration
-  requiredClaims:
-    name: ""
-    match: ""
-  jwtpolicy: api
-corelation:
-  correlationId: "true"
-  trace: "true"
-  correlationpolicy: api
+  apiList: "cc-transformer-api,asset-management"
 schemes: []
 routes: []
