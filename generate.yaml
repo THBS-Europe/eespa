@@ -3,8 +3,8 @@ environmentSpec: QA
 type: Product
 authMethod: none
 product:
-  productName: TektonKT
-  apiList: cc-transformer-api
+  productName: NewTestProduct
+  apiList: "cc-transformer-api,asset-management"
 corelation:
   correlationId: "true"
   trace: "true"
