@@ -1,12 +1,14 @@
 ---
+name: eespa
+description: 'Perform Employee Related '
+basePath: /ea
+openApiSpec: eespa.yaml
 environmentSpec: QA
-type: Product
+type: API
 authMethod: none
-product:
-  productName: NewTestProduct
-  apiList: cc-transformer-api
 corelation:
   correlationId: "true"
-  correlationpolicy: product
+  trace: "true"
+  correlationpolicy: api
 schemes: []
 routes: []
