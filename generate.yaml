@@ -2,29 +2,9 @@
 environmentSpec: QA
 type: Product
 authMethod: none
-filterIp:
-  allowip: 10.20.30.40
-  filterpolicy: api
-azureRateLimit:
-  noOfCalls: 2
-  renewalPeriod: 60
-  ratepolicy: api
-  counter: ip-address
-responseCache:
-  timeDuration: 30
-  cachepolicy: product
 product:
   productName: NewTestProduct
-  apiList: cc-transformer-api
-validateJWT:
-  headerName: Authorization
-  failedStatusCode: 401
-  failedStatusMessage: Authorization failure
-  openIdURL: https://sit.identity.idmodule.eu/.well-known/openid-configuration
-  requiredClaims:
-    name: ""
-    match: ""
-  jwtpolicy: api
+  apiList: "cc-transformer-api,asset-management"
 corelation:
   correlationId: "true"
   trace: "true"
