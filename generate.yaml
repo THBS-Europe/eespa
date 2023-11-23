@@ -1,23 +1,12 @@
 ---
-name: eespa
-description: 'Perform Employee Related '
-basePath: /ea
-openApiSpec: eespa.yaml
 environmentSpec: QA
-type: API
+type: Product
 authMethod: none
-filterIp:
-  allowip: 10.20.30.40
-  filterpolicy: product
-azureRateLimit:
-  noOfCalls: 2
-  renewalPeriod: 60
-  ratepolicy: api
-  counter: ip-address
 responseCache:
-  timeDuration: 30
+  timeDuration: 15
   cachepolicy: product
 product:
   productName: NewTestProduct
+  apiList: cc-transformer-api
 schemes: []
 routes: []
