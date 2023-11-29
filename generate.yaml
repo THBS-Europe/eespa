@@ -2,11 +2,41 @@
 environmentSpec: QA
 type: Product
 authMethod: none
+filterIp:
+  allowip: 121.242.128.86
+  filterpolicy: product
+azureRateLimit:
+  noOfCalls: 2
+  renewalPeriod: 15
+  ratepolicy: product
+  counter: user-identity
 responseCache:
-  timeDuration: 15
+  timeDuration: 30
   cachepolicy: product
 product:
-  productName: NewTestProduct
+  productName: Demoproduct
   apiList: cc-transformer-api
+validateJWT:
+  headerName: Authorization
+  failedStatusCode: 405
+  failedStatusMessage: Authorization failed
+  openIdURL: https://sit.identity.idmodule.eu/.well-known/openid-configuration
+  requiredClaims:
+    name: ""
+    match: ""
+  jwtpolicy: product
+corelation:
+  correlationId: "true"
+  trace: "true"
+  correlationpolicy: api
+allowedOrigins:
+  origins: http://localhost/
+  creds: "false"
+  methods: "get,post"
+  allowHeaders: "origin,content-type,accept,X-PINGOTHER"
+  exposeHeaders: "Cache-Control, Content-Language, Content-Length, Content-Type, Expires,\
+    \ Last-Modified, Pragma"
+  maxSeconds: ""
+  crossoriginpolicyapply: product
 schemes: []
 routes: []
