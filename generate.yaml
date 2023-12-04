@@ -2,8 +2,32 @@
 environmentSpec: Dev
 type: Product
 authMethod: none
+filterIp:
+  allowip: 121.242.128.86
+  filterpolicy: api
+azureRateLimit:
+  noOfCalls: 20000
+  renewalPeriod: 15
+  ratepolicy: api
+  counter: ip-address
+responseCache:
+  timeDuration: 30
+  cachepolicy: api
 product:
   productName: NewProduct
-  apiList: "cc-transformer-api,asset-management"
+  apiList: "eespa,eesspa"
+validateJWT:
+  headerName: Authorization
+  failedStatusCode: 405
+  failedStatusMessage: Authorization failed
+  openIdURL: ""
+  requiredClaims:
+    name: ""
+    match: ""
+  jwtpolicy: api
+corelation:
+  correlationId: "true"
+  trace: "true"
+  correlationpolicy: api
 schemes: []
 routes: []
